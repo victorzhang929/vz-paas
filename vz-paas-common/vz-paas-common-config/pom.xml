@@ -3,25 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>vz-paas</artifactId>
-        <groupId>com.vz.paas</groupId>
+        <artifactId>vz-paas-common</artifactId>
+        <groupId>com.vz.paas.common</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vz.paas.common</groupId>
-    <artifactId>vz-paas-common</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>vz-paas-common-base</module>
-        <module>vz-paas-common-config</module>
-        <module>vz-paas-common-util</module>
-    </modules>
+    <artifactId>vz-paas-common-config</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.vz.paas.common</groupId>
+            <artifactId>vz-paas-common-base</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
