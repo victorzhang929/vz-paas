@@ -1,5 +1,8 @@
 package com.vz.paas.base.constant;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 /**
  * 全局常量
  * @author zhangwei
@@ -39,5 +42,20 @@ public class GlobalConstant {
     public static final String ZK_REGISTRY_CONSUMER_ROOT_PATH = "/paas/registry/consumer";
     public static final String ZK_REGISTRY_SEQ = "/paas/seq";
 
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static final class Symbol {
+
+        public static final String COMMA = ",";
+        public static final String SPOT = ".";
+        public static final String UNDER_LINE = "_";
+        public static final String PERCENT = "%";
+        public static final String AT = "@";
+        public static final String PIPE = "||";
+        public static final String SHORT_LINE = "-";
+        public static final String SPACE = " ";
+        public static final String SLASH = "/";
+        public static final String COLON = ":";
+
+    }
     
 }
