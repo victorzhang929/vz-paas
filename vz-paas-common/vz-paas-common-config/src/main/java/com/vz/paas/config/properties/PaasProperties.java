@@ -28,5 +28,5 @@ public class PaasProperties {
 
     private JobProperties job = new JobProperties();
 
-    private ZookeeperPropertiest zk = new ZookeeperPropertiest();
+    private ZookeeperProperties zk = new ZookeeperProperties();
 }

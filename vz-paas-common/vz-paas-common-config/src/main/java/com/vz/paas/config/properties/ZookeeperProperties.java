@@ -9,7 +9,7 @@ import lombok.Data;
  * @date 2018-10-08 16:14:50
  */
 @Data
-public class ZookeeperPropertiest {
+public class ZookeeperProperties {
 
     /**
      * 连接Zookeeper服务器的列表

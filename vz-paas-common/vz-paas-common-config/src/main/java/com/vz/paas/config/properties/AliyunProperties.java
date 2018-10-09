@@ -18,7 +18,7 @@ public class AliyunProperties {
     private AliyunSmsProperties sms = new AliyunSmsProperties();
 
     @Data
-    private class AliyunKeyProperties {
+    public class AliyunKeyProperties {
 
         /**
          * 密钥ID
@@ -32,7 +32,7 @@ public class AliyunProperties {
     }
 
     @Data
-    private class RocketMqProperties {
+    public class RocketMqProperties {
         /**
          * 消费者组
          */
@@ -46,7 +46,7 @@ public class AliyunProperties {
         /**
          * 服务地址
          */
-        private String namesrvAddr;
+        private String nameSrvAddr;
 
         /**
          * 生产者是否使用可靠消息，默认不使用@MqConsumerStore
@@ -60,7 +60,7 @@ public class AliyunProperties {
     }
 
     @Data
-    private class AliyunSmsProperties {
+    public class AliyunSmsProperties {
         /**
          * 阿里云管理控制台配置的短信签名（状态必须是验证通过）
          */
