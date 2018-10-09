@@ -43,6 +43,10 @@
         <commons-codec.version>1.10</commons-codec.version>
         <jackson.core.version>2.8.5</jackson.core.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
+        <fastjson.version>1.2.48</fastjson.version>
+        <curator.version>2.10.0</curator.version>
+
+        <mybatis.version>3.4.2</mybatis.version>
     </properties>
 
     <dependencies>
@@ -72,6 +76,16 @@
             <dependency>
                 <groupId>com.vz.paas.common</groupId>
                 <artifactId>vz-paas-common-base</artifactId>
+                <version>${paas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vz.paas.common</groupId>
+                <artifactId>vz-paas-common-util</artifactId>
+                <version>${paas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vz.paas.common</groupId>
+                <artifactId>vz-paas-common-config</artifactId>
                 <version>${paas.version}</version>
             </dependency>
 
@@ -122,6 +136,33 @@
                 <groupId>org.codehaus.jackson</groupId>
                 <artifactId>jackson-mapper-asl</artifactId>
                 <version>${codehaus.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-client</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

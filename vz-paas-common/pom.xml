@@ -16,6 +16,7 @@
         <module>vz-paas-common-base</module>
         <module>vz-paas-common-config</module>
         <module>vz-paas-common-util</module>
+        <module>vz-paas-common-zk</module>
     </modules>
 
     <dependencies>
