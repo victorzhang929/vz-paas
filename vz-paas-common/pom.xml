@@ -18,6 +18,7 @@
         <module>vz-paas-common-util</module>
         <module>vz-paas-common-zk</module>
         <module>vz-paas-common-feign</module>
+        <module>vz-paas-common-core</module>
     </modules>
 
     <dependencies>
