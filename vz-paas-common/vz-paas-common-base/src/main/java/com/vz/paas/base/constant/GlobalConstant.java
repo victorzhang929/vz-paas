@@ -20,6 +20,7 @@ public class GlobalConstant {
     public static final String WL_PROXY_CLIENT_IP = "WL-Proxy-Client-IP";
     public static final String HTTP_CLIENT_IP = "HTTP_CLIENT_IP";
     public static final String HTTP_X_FORWARDED_FOR = "HTTP_X_FORWARDED_FOR";
+    public static final String USER_AGENT = "User-Agent";
 
     public static final String LOCALHOST_IP = "127.0.0.1";
     public static final String LOCALHOST_IP_16 = "0:0:0:0:0:0:0:1";
@@ -56,6 +57,70 @@ public class GlobalConstant {
         public static final String SLASH = "/";
         public static final String COLON = ":";
 
+    }
+
+    @NoArgsConstructor(access = AccessLevel.PRIVATE)
+    public static final class System {
+        /**
+         * 全局用户名
+         */
+        public static final String TOKEN_AUTH_DTO = "CURRENT_USER_DTO";
+
+        /**
+         * 超级管理员的用户ID
+         */
+        public static final Long SUPER_MANAGER_USER_ID = 1L;
+
+        /**
+         * 超级管理员的用户编号
+         */
+        public static final String SUPER_MANAGER_LOGIN_NAME = "admin";
+
+        /**
+         * 超级管理员的角色ID
+         */
+        public static final Long SUPER_MANAGER_ROLE_ID = 1L;
+
+        /**
+         * 超级管理员的组织ID
+         */
+        public static final Long SUPER_MANAGER_GROUP_ID = 1L;
+
+        /**
+         * 运营工作天ID
+         */
+        public static final Long OPER_APPLICATION_ID = 1L;
+
+        /**
+         * 基础菜单
+         */
+        public static final String MENU_ROOT = "root";
+
+        /**
+         * 默认文件存放地址
+         */
+        public static final String DEFAULT_FILE_PATH = "paas/file/";
+
+        /**
+         * 默认redis失效时间
+         */
+        public static final Long REDIS_DEFAULT_EXPIRE = 1L;
+
+    }
+
+    public interface Number {
+        int THOUSAND_INT = 1000;
+        int HUNDRED_INT = 100;
+        int ONE_INT = 1;
+        int TWO_INT = 2;
+        int THREE_INT = 3;
+        int FOUR_INT = 4;
+        int FIVE_INT = 5;
+        int SIX_INT = 6;
+        int SEVEN_INT = 7;
+        int EIGHT_INT = 8;
+        int NINE_INT = 9;
+        int TEN_INT = 10;
     }
     
 }
