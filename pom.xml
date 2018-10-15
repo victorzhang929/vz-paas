@@ -12,6 +12,7 @@
         <module>vz-paas-discovery</module>
         <module>vz-paas-eureka</module>
         <module>vz-paas-gateway</module>
+        <module>vz-paas-monitor</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -43,6 +44,7 @@
         <springfox.version>2.6.1</springfox.version>
 
         <hystrix.core.version>1.5.10</hystrix.core.version>
+        <boot.admin.version>1.5.7</boot.admin.version>
 
         <commons-lang3.version>3.4</commons-lang3.version>
         <commons-codec.version>1.10</commons-codec.version>
@@ -126,6 +128,37 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${springfox.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server</artifactId>
+                <version>${boot.admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${boot.admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui-hystrix</artifactId>
+                <version>${boot.admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui-turbine</artifactId>
+                <version>${boot.admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui-login</artifactId>
+                <version>${boot.admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${boot.admin.version}</version>
             </dependency>
 
             <dependency>
