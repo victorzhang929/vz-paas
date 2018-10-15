@@ -20,6 +20,7 @@
         <module>vz-paas-common-feign</module>
         <module>vz-paas-common-core</module>
         <module>vz-paas-common-security-core</module>
+        <module>vz-paas-common-security-feign</module>
     </modules>
 
     <dependencies>

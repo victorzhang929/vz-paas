@@ -39,14 +39,20 @@
         <lombok.version>1.16.18</lombok.version>
         <springfox.version>2.6.1</springfox.version>
 
+        <hystrix.core.version>1.5.10</hystrix.core.version>
+
         <commons-lang3.version>3.4</commons-lang3.version>
         <commons-codec.version>1.10</commons-codec.version>
         <jackson.core.version>2.8.5</jackson.core.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <fastjson.version>1.2.48</fastjson.version>
+        <kaptcha.version>2.3.2</kaptcha.version>
         <curator.version>2.10.0</curator.version>
+        <bitwalker.version>1.20</bitwalker.version>
+        <rocketmq-client.version>4.2.0</rocketmq-client.version>
 
         <mybatis.version>3.4.2</mybatis.version>
+        <mapper.version>3.4.0</mapper.version>
     </properties>
 
     <dependencies>
@@ -88,6 +94,16 @@
                 <artifactId>vz-paas-common-config</artifactId>
                 <version>${paas.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.vz.paas.common</groupId>
+                <artifactId>vz-paas-common-zk</artifactId>
+                <version>${paas.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vz.paas.common</groupId>
+                <artifactId>vz-paas-common-core</artifactId>
+                <version>${paas.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -100,6 +116,12 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${springfox.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.netflix.hystrix</groupId>
+                <artifactId>hystrix-core</artifactId>
+                <version>${hystrix.core.version}</version>
             </dependency>
 
             <dependency>
@@ -142,6 +164,17 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${kaptcha.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.servlet-api</groupId>
+                        <artifactId>javax.servlet</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.curator</groupId>
@@ -158,7 +191,22 @@
                 <artifactId>curator-framework</artifactId>
                 <version>${curator.version}</version>
             </dependency>
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${bitwalker.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq-client.version}</version>
+            </dependency>
 
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper</artifactId>
+                <version>${mapper.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
