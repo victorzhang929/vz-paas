@@ -13,6 +13,7 @@
         <module>vz-paas-eureka</module>
         <module>vz-paas-gateway</module>
         <module>vz-paas-monitor</module>
+        <module>vz-paas-zipkin</module>
     </modules>
     <packaging>pom</packaging>
 
