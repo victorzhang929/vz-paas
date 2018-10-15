@@ -11,6 +11,7 @@
         <module>vz-paas-common</module>
         <module>vz-paas-discovery</module>
         <module>vz-paas-eureka</module>
+        <module>vz-paas-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
