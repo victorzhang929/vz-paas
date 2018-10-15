@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: @pom.artifactId@
+  rabbitmq:
+    host: paas-mq-rabbit
+    port: 5672
+    username: guest
+    password: guest
+  boot:
+    admin:
+      username: admin
+      password: admin
+
+security:
+  user:
+    name: admin
+    password: admin

@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>vz-paas-common</module>
+        <module>vz-paas-discovery</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -110,6 +111,12 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>1.5.7</version>
             </dependency>
 
             <dependency>
