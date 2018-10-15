@@ -10,6 +10,7 @@
     <modules>
         <module>vz-paas-common</module>
         <module>vz-paas-discovery</module>
+        <module>vz-paas-eureka</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -47,6 +48,7 @@
         <jackson.core.version>2.8.5</jackson.core.version>
         <codehaus.jackson.version>1.9.9</codehaus.jackson.version>
         <fastjson.version>1.2.48</fastjson.version>
+        <logstash-logback.version>4.6</logstash-logback.version>
         <kaptcha.version>2.3.2</kaptcha.version>
         <curator.version>2.10.0</curator.version>
         <bitwalker.version>1.20</bitwalker.version>
@@ -170,6 +172,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash-logback.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.penggle</groupId>
